@@ -1,0 +1,88 @@
+
+CSIS3053 – CourseMate AI Project Summary
+Project Title: CourseMate AI – AI Assistant to Help Students Find Course Materials
+Course: CSIS3053 (Non‑Written Final Assessment)
+Student: [Your Name]
+Submission Type: Project Report / Summary (for LMS & sharing)
+
+
+1. Project Background
+Students often struggle to locate information across multiple course PDFs such as lecture notes, assignment briefs, and handbooks. Manual searching is time‑consuming and can lead to missed deadlines or requirements. CourseMate AI addresses this problem by enabling semantic search and AI‑assisted answers grounded in uploaded documents.
+
+
+2. System Overview
+CourseMate AI is a web application that allows users to upload course materials (PDF files), ask questions in natural language, and receive concise answers supported by citations from the source documents.
+Core Capabilities
+
+Upload course PDFs
+Ask questions using natural language
+Retrieve the most relevant document sections (Top‑K)
+Generate answers with clear citations
+
+
+3. Architecture & Workflow
+The system follows a Retrieval‑Augmented Generation (RAG) style workflow:
+
+PDF Ingestion – User uploads one or more PDFs.
+Text Processing – Text is extracted and split into manageable chunks.
+Retrieval – Relevant chunks are identified using similarity scoring.
+AI Generation – An AI language model generates an answer strictly based on retrieved content.
+Citation Display – The answer is shown together with document references.
+
+
+4. AI Integration
+AI is central to CourseMate AI:
+
+Retrieval ensures answers are grounded in real course documents.
+The language model generates clear, concise responses based only on retrieved context.
+This approach reduces incorrect or hallucinated answers and improves trustworthiness.
+
+
+5. Technology Stack
+
+Frontend: Streamlit
+Backend: Python
+PDF Processing: PyPDF
+Information Retrieval: Local similarity‑based retrieval
+AI Model: Gemini API (or equivalent)
+Environment: Python virtual environment (.venv)
+
+
+6. Demo Description
+Demo Steps:
+
+Upload course PDFs
+Build the knowledge base
+Enter a question (e.g., “What is the assignment due date?”)
+View the generated answer with citations
+A one‑minute demo video demonstrates the system interface, workflow, and AI response.
+
+
+7. Impact & Benefits
+
+Saves time for students
+Reduces mistakes and misunderstandings
+Improves accessibility to course information
+Demonstrates practical AI application in education
+
+
+8. Future Improvements
+
+OCR support for scanned PDFs
+Multi‑language support
+User authentication and access control
+Analytics and usage insights
+
+
+9. Academic Integrity & AI Usage Declaration
+This project was developed with the assistance of AI tools for code scaffolding, debugging, documentation, and ideation. All generated content was reviewed, tested, and modified by the student. API keys and sensitive credentials are securely managed and not included in public repositories.
+
+
+10. Submission Links (Fill In)
+
+GitHub Repository: [Paste link]
+Demo Video: [Paste link]
+Slides (PDF): [Paste link]
+
+
+End of Document
